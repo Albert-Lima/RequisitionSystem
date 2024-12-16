@@ -15,6 +15,9 @@ cron.schedule('*/5 * * * *', async () => {
     }
 });
 
+app.get("/", (req, res)=>{
+  res.send("aplicação rodandando")
+})
 
 
 app.listen(PORT, ()=>{
